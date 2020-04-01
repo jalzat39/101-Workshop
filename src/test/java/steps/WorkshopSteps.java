@@ -1,8 +1,8 @@
 package steps;
 
-import cucumber.annotation.en.*;
 import elements.ColombiaPage;
 import elements.HomePage;
+import io.cucumber.java.en.*;
 import org.junit.After;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -26,7 +26,7 @@ public class WorkshopSteps {
     @Then("the Colombia page should load")
     public void the_Colombia_page_should_load() {
         ColombiaPage colombiaPage = new ColombiaPage(driver);
-        Assert.assertEquals("Colombia", colombiaPage.getColombiaMenu().getText());
+        Assert.assertEquals("COLOMBIA", colombiaPage.getColombiaMenu().getText());
     }
 
     @After
