@@ -8,7 +8,7 @@ public class HelloWorld {
      * @param args
      */
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "/Users/felipecorrea/EndavaWorkshop/101Workshop/src/test/resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver wd = new ChromeDriver();
         wd.get("https://www.eltiempo.com/");
         wd.quit();
